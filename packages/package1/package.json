@@ -66,5 +66,15 @@
     "ignorePatterns": [
       "dist"
     ]
+  },
+  "depcheck": {
+    "specials": [
+      "bin"
+    ],
+    "ignores": [
+      "@types/*",
+      "hd-scripts",
+      "assert"
+    ]
   }
 }
