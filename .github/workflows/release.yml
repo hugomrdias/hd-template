@@ -28,6 +28,9 @@ jobs:
       contains(fromJson(needs.release.outputs.paths_released), 'packages/package1') ||
       contains(fromJson(needs.release.outputs.paths_released), 'packages/package2')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.3
