@@ -1,16 +1,16 @@
-# Contributing to Filsnap
+# Contributing to Template
 
 Thank you for helping to improve the project! We are so happy that you are contributing! 💖
 
-You can contribute to the Filsnap at any level. Whether you are new to web development or have been at it for ages doesn't matter. We can use your help!
+You can contribute to the project at any level. Whether you are new to web development or have been at it for ages doesn't matter. We can use your help!
 
 **No contribution is too small, and all contributions are valued.**
 
-This guide will help you to get started. It includes many details, but don't let that turn you away. Consider this a map to help you navigate the process, and please reach out to us with any questions and concerns in the `#filsnap` channel on our [Slack][slack].
+This guide will help you to get started. It includes many details, but don't let that turn you away. Consider this a map to help you navigate the process, and please reach out to us with any questions and concerns in the our public [channel] .
 
 ## Conduct
 
-Please review our [Code of Conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md) which describes the behavior we expect from all contributors. Please be kind, inclusive, and considerate when interacting with contributors and maintainers.
+Please review our [Code of Conduct] which describes the behavior we expect from all contributors. Please be kind, inclusive, and considerate when interacting with contributors and maintainers.
 
 ## Contributing in issues
 
@@ -23,7 +23,7 @@ join in the discussion around bugs and comment on pull requests.
 
 ### Asking for help
 
-If you have reviewed our [documentation][docs] and still have questions or are having problems, ask for help in the `#filsnap` channel on our [Slack][slack] or [start a discussion][discussions].
+If you have reviewed our [documentation][docs] and still have questions or are having problems, ask for help in the our public [channel] or [start a discussion][discussions].
 
 ### Submitting a bug report
 
@@ -50,11 +50,11 @@ If you have been assigned to fix an issue or develop a new feature, please follo
 
 This repo has a dev container configuration to enable one click setup of a development environment using Codespaces.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/filecoin-project/filsnap)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)][codespaces]
 
 ## Pull requests
 
-Pull requests are how we make changes to the Filsnap.
+Pull requests are how we make changes.
 
 Even tiny pull requests to fix typos or improve comments are welcome. Before submitting a significant PR, it is usually best to start by [opening an issue][issue] or [starting a discusssion][discussions]. Taking one of these steps increases the likelihood that your PR will be merged.
 
@@ -69,6 +69,12 @@ If your change alters existing code, please run the test suites:
 ```sh
 pnpm run lint
 pnpm run test
+
+# node tests can use native watch mode
+pnpm test:node -n watch
+
+# browser tests can enable watch
+pnpm test:browser --watch
 ```
 
 If you are adding a new feature, please add tests that prove the code works correctly and reference them when you submit the pull request.
@@ -76,8 +82,6 @@ If you are adding a new feature, please add tests that prove the code works corr
 ### Opening a pull request
 
 We provide a [pull request template][template] to give you a starting point when creating a pull request. Please fill this template in, but feel free to delete any sections that do not apply or that you are unsure about.
-
-If your pull request is a typo fix or an update to documentation, please add the `no changelog` label _before_ submitting your pull request.
 
 ### Discuss and update
 
@@ -118,11 +122,13 @@ The most important prefixes you should have in mind are:
 - `feat!:`, or `fix!:`, `refactor!:`, etc., which represent a breaking change
   (indicated by the `!`) and will result in a SemVer major.
 
-[slack]: https://filecoin.io/slack
-[discussions]: https://github.com/filecoin-project/filsnap/discussions
-[docs]: https://filecoin-project.github.io/filsnap/
-[issue]: https://github.com/filecoin-project/filsnap/issues
+[channel]: https://github.com/hugomrdias/hd-template/discussions
+[codespaces]: https://codespaces.new/hugomrdias/hd-template
+[discussions]: https://github.com/hugomrdias/hd-template/discussions
+[issue]: https://github.com/hugomrdias/hd-template/issues
+[docs]: https://hugomrdias.github.io/hd-template/
 [sscce]: http://www.sscce.org/
 [signing]: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
 [telling-git]: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
 [template]: PULL_REQUEST_TEMPLATE.md
+[Code of Conduct]: CODE_OF_CONDUCT.md

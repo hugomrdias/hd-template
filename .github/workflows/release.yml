@@ -1,11 +1,15 @@
 name: Release
+
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   CI: true
   FORCE_COLOR: 1
 on:
   push:
-    branches:
-      - main
+    branches: [$default-branch]
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -33,16 +37,23 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.3
+      - uses: pnpm/action-setup@v2.4.0
         with:
-          version: 7
+          version: latest
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: lts/*
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
       - run: pnpm install
+      - run: pnpm run lint
       - run: pnpm run build
       - run: pnpm -r publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  docs:
+    needs: release
+    if: |
+      contains(fromJson(needs.release.outputs.paths_released), 'packages/package1') ||
+      contains(fromJson(needs.release.outputs.paths_released), 'packages/package2')
+    uses: './.github/workflows/reusable-docs.yml'

@@ -18,12 +18,12 @@
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "import": "./src/index.js"
+      "default": "./src/index.js"
     },
     "./crypto": {
       "types": "./dist/src/crypto.d.ts",
       "browser": "./src/crypto-browser.js",
-      "import": "./src/crypto.js"
+      "default": "./src/crypto.js"
     }
   },
   "typesVersions": {
@@ -48,10 +48,10 @@
   "devDependencies": {
     "@types/assert": "^1.5.6",
     "@types/mocha": "^10.0.1",
-    "@types/node": "^18.11.18",
-    "assert": "^2.0.0",
+    "@types/node": "^20.6.3",
+    "assert": "^2.1.0",
     "mocha": "^10.2.0",
-    "playwright-test": "^8.2.0"
+    "playwright-test": "^12.3.4"
   },
   "publishConfig": {
     "provenance": true
@@ -60,9 +60,6 @@
     "extends": [
       "../../node_modules/hd-scripts/eslint/index.js"
     ],
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
     "env": {
       "mocha": true
     },
