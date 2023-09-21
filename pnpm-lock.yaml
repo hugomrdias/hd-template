@@ -39,7 +39,7 @@ importers:
   examples/demo:
     dependencies:
       package1:
-        specifier: workspace:^
+        specifier: '*'
         version: link:../../packages/package1
     devDependencies:
       '@babel/core':
