@@ -46,7 +46,7 @@
     "test:browser": "playwright-test 'test/**/!(*.node).test.js'"
   },
   "devDependencies": {
-    "@types/assert": "^1.5.6",
+    "@types/assert": "^1.5.7",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.6.3",
     "assert": "^2.1.0",
