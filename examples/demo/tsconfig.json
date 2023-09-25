@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "target": "ES2022",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "noEmit": true,
+    "moduleDetection": "force",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "verbatimModuleSyntax": true,
+    "types": ["vite/client"],
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    // Type Checking
-    "strict": true,
-    "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
+    "outDir": "dist",
+    "noEmit": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
     // Advanced
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "types": ["vite/client"],
-    "allowImportingTsExtensions": true
+    // Type Checking
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "dist", "out"]
 }

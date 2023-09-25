@@ -1,26 +1,26 @@
 {
   "name": "demo",
+  "type": "module",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "author": "Hugo Dias <hugomrdias@gmail.com> (hugodias.me)",
+  "license": "MIT",
+  "keywords": [],
   "main": "src/main.jsx",
-  "type": "module",
-  "private": true,
   "scripts": {
-    "lint": "tsc --build && eslint '**/*.{js,jsx,ts,tsx}' && prettier --check '**/*.{js,jsx,ts,tsx,yml,json}' --ignore-path ../../.gitignore",
+    "lint": "tsc --build && eslint . && prettier --check '**/*.{js,jsx,ts,tsx,yml,json,css}' --ignore-path ../../.gitignore",
     "build": "vite build --force",
     "dev": "vite --force",
     "serve": "vite preview --port 3000"
   },
-  "keywords": [],
-  "license": "MIT",
   "dependencies": {
     "package1": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.20",
-    "@types/node": "^20.6.3",
-    "hd-scripts": "^8.1.2",
+    "@babel/core": "^7.23.0",
+    "@types/node": "^20.7.0",
+    "hd-scripts": "^9.0.1",
     "typescript": "5.2.2",
     "vite": "^4.4.9"
   },

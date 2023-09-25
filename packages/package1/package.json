@@ -1,5 +1,6 @@
 {
   "name": "package1",
+  "type": "module",
   "version": "0.0.1",
   "description": "Example package description.",
   "author": "Hugo Dias <hugomrdias@gmail.com> (hugodias.me)",
@@ -7,13 +8,6 @@
   "repository": {
     "url": "hugomrdias/hd-template",
     "directory": "packages/package1"
-  },
-  "type": "module",
-  "main": "src/index.js",
-  "types": "dist/src/index.d.ts",
-  "browser": {
-    "crypto": false,
-    "./src/crypto.js": "./src/crypto-browser.js"
   },
   "exports": {
     ".": {
@@ -25,6 +19,12 @@
       "browser": "./src/crypto-browser.js",
       "default": "./src/crypto.js"
     }
+  },
+  "main": "src/index.js",
+  "types": "dist/src/index.d.ts",
+  "browser": {
+    "crypto": false,
+    "./src/crypto.js": "./src/crypto-browser.js"
   },
   "typesVersions": {
     "*": {
@@ -39,16 +39,16 @@
     "dist/src/*.d.ts.map"
   ],
   "scripts": {
-    "lint": "tsc --build && eslint '**/*.{js,ts}' && prettier --check '**/*.{js,ts,yml,json}' --ignore-path ../../.gitignore",
+    "lint": "tsc --build && eslint . && prettier --check '**/*.{js,ts,yml,json}' --ignore-path ../../.gitignore",
     "build": "tsc --build",
     "test": "pnpm run test:node && pnpm run test:browser",
     "test:node": "mocha 'test/**/!(*.browser).test.js'",
     "test:browser": "playwright-test 'test/**/!(*.node).test.js'"
   },
   "devDependencies": {
-    "@types/assert": "^1.5.6",
+    "@types/assert": "^1.5.7",
     "@types/mocha": "^10.0.1",
-    "@types/node": "^20.6.3",
+    "@types/node": "^20.7.0",
     "assert": "^2.1.0",
     "mocha": "^10.2.0",
     "playwright-test": "^12.3.4"
