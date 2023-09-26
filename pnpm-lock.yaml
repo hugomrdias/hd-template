@@ -12,8 +12,8 @@ importers:
         specifier: ^1.4.6
         version: 1.4.6
       hd-scripts:
-        specifier: ^9.0.1
-        version: 9.0.1
+        specifier: ^9.0.4
+        version: 9.0.4
       lint-staged:
         specifier: ^14.0.1
         version: 14.0.1
@@ -49,8 +49,8 @@ importers:
         specifier: ^20.7.0
         version: 20.7.0
       hd-scripts:
-        specifier: ^9.0.1
-        version: 9.0.1
+        specifier: ^9.0.4
+        version: 9.0.4
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -76,8 +76,8 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0
       playwright-test:
-        specifier: ^12.3.4
-        version: 12.3.4
+        specifier: ^12.3.5
+        version: 12.3.5
 
 packages:
 
@@ -770,8 +770,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@eslint-community/regexpp@4.8.1:
-    resolution: {integrity: sha512-PWiOzLIUAjN/w5K17PoF4n6sKBw0gqLHPhywmYHP4t1VFQQVYeb1yWsJwnMVEMl3tUHME7X/SJPZLmtG7XBDxQ==}
+  /@eslint-community/regexpp@4.8.2:
+    resolution: {integrity: sha512-0MGxAVt1m/ZK+LTJp/j0qF7Hz97D9O/FH9Ms3ltnyIdDD57cbb1ACIQTkbHvNXtWDv5TPq7w5Kq56+cNukbo7g==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
@@ -961,7 +961,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@eslint-community/regexpp': 4.8.1
+      '@eslint-community/regexpp': 4.8.2
       '@typescript-eslint/parser': 6.7.3(eslint@8.50.0)(typescript@5.2.2)
       '@typescript-eslint/scope-manager': 6.7.3
       '@typescript-eslint/type-utils': 6.7.3(eslint@8.50.0)(typescript@5.2.2)
@@ -2212,7 +2212,7 @@ packages:
       eslint: '>=8'
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.50.0)
-      '@eslint-community/regexpp': 4.8.1
+      '@eslint-community/regexpp': 4.8.2
       eslint: 8.50.0
     dev: true
 
@@ -2462,7 +2462,7 @@ packages:
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.50.0)
-      '@eslint-community/regexpp': 4.8.1
+      '@eslint-community/regexpp': 4.8.2
       '@eslint/eslintrc': 2.1.2
       '@eslint/js': 8.50.0
       '@humanwhocodes/config-array': 0.11.11
@@ -2926,8 +2926,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hd-scripts@9.0.1:
-    resolution: {integrity: sha512-93mBtwowRvhPHYJdBLDKJzEaIkhr+0Lw13RCJRLh8Uztq9spB7zlwzOCE2Z5flwA9bkGsuLZTMAqTy3VnaBElg==}
+  /hd-scripts@9.0.4:
+    resolution: {integrity: sha512-xiSMrVdB/WQi8RzilzbaoJhdSIZ92dy0Y16h73cKA7UIQAXcstIRsOGR05kLLMAbrrQfByf245V0M0m/oqehzQ==}
     engines: {node: '>=14'}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.7.3(@typescript-eslint/parser@6.7.3)(eslint@8.50.0)(typescript@5.2.2)
@@ -4075,14 +4075,14 @@ packages:
     hasBin: true
     dev: true
 
-  /playwright-core@1.38.0:
-    resolution: {integrity: sha512-f8z1y8J9zvmHoEhKgspmCvOExF2XdcxMW8jNRuX4vkQFrzV4MlZ55iwb5QeyiFQgOFCUolXiRHgpjSEnqvO48g==}
+  /playwright-core@1.38.1:
+    resolution: {integrity: sha512-tQqNFUKa3OfMf4b2jQ7aGLB8o9bS3bOY0yMEtldtC2+spf8QXG9zvXLTXUeRsoNuxEYMgLYR+NXfAa1rjKRcrg==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
 
-  /playwright-test@12.3.4:
-    resolution: {integrity: sha512-BpftAouoCSt/vlbFjo9qomOJv4XV2RhS2L0dDHo6haonMbUNDSC6dOxL7a33roa+t4G2gRUEBLEGkgJYf4uVwA==}
+  /playwright-test@12.3.5:
+    resolution: {integrity: sha512-OUYH4+NIIaUQkkVKuQ5/YqSc/Mir297hzIyS+tGzVUWnLV+V5DTAxefPeDYH3DSKN/QOSoiT3h5NuWphTHcHww==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
@@ -4106,7 +4106,7 @@ packages:
       ora: 7.0.1
       p-timeout: 6.1.2
       path-browserify: 1.0.1
-      playwright-core: 1.38.0
+      playwright-core: 1.38.1
       polka: 0.5.2
       premove: 4.0.0
       process: 0.11.10
