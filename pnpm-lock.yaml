@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -12,8 +12,8 @@ importers:
         specifier: ^1.4.6
         version: 1.4.6
       hd-scripts:
-        specifier: ^9.0.4
-        version: 9.0.4
+        specifier: ^9.0.5
+        version: 9.0.5
       lint-staged:
         specifier: ^14.0.1
         version: 14.0.1
@@ -49,8 +49,8 @@ importers:
         specifier: ^20.7.0
         version: 20.7.0
       hd-scripts:
-        specifier: ^9.0.4
-        version: 9.0.4
+        specifier: ^9.0.5
+        version: 9.0.5
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -1695,7 +1695,7 @@ packages:
     dev: true
 
   /concat-map@0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /convert-source-map@1.9.0:
@@ -2926,8 +2926,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hd-scripts@9.0.4:
-    resolution: {integrity: sha512-xiSMrVdB/WQi8RzilzbaoJhdSIZ92dy0Y16h73cKA7UIQAXcstIRsOGR05kLLMAbrrQfByf245V0M0m/oqehzQ==}
+  /hd-scripts@9.0.5:
+    resolution: {integrity: sha512-MhNovCNlHL9gBGKLQQw42eMUWDFBUEpApxCAzls73/R68VGjbBC8LCiauYHB1fASA+yRencqLBOEfpL0HXi5Vg==}
     engines: {node: '>=14'}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.7.3(@typescript-eslint/parser@6.7.3)(eslint@8.50.0)(typescript@5.2.2)
