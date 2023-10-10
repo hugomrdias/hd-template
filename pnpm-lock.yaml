@@ -76,8 +76,8 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0
       playwright-test:
-        specifier: ^12.3.7
-        version: 12.3.7
+        specifier: ^12.3.8
+        version: 12.3.8
 
 packages:
 
@@ -4081,8 +4081,8 @@ packages:
     hasBin: true
     dev: true
 
-  /playwright-test@12.3.7:
-    resolution: {integrity: sha512-Gfzc4OKNolKVMAo+Lpskd6IDUcW6TNxgspyhzjxRpo5LLmNk/C0FhbHVp2nn6/nG3fwWEql5fRA5Pj/fOIhf/Q==}
+  /playwright-test@12.3.8:
+    resolution: {integrity: sha512-nd8/R0fDM2MXkNfhVB+/Vw1ToIQ7QQJv8eVLbwqHp83p34peQacoytwRvSnkc2G2CtFxABP+9w3ljwYd+5TLmg==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
