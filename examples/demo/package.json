@@ -18,7 +18,7 @@
     "package1": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.0",
+    "@babel/core": "^7.23.2",
     "@types/node": "^20.7.0",
     "hd-scripts": "^9.0.5",
     "typescript": "5.2.2",
