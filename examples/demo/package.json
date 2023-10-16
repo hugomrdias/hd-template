@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@types/node": "^20.7.0",
-    "hd-scripts": "^9.0.5",
+    "hd-scripts": "^9.0.6",
     "typescript": "5.2.2",
     "vite": "^4.4.11"
   },

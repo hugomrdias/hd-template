@@ -12,8 +12,8 @@ importers:
         specifier: ^1.4.6
         version: 1.4.6
       hd-scripts:
-        specifier: ^9.0.5
-        version: 9.0.5
+        specifier: ^9.0.6
+        version: 9.0.6
       lint-staged:
         specifier: ^14.0.1
         version: 14.0.1
@@ -49,8 +49,8 @@ importers:
         specifier: ^20.7.0
         version: 20.7.0
       hd-scripts:
-        specifier: ^9.0.5
-        version: 9.0.5
+        specifier: ^9.0.6
+        version: 9.0.6
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -2926,8 +2926,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hd-scripts@9.0.5:
-    resolution: {integrity: sha512-MhNovCNlHL9gBGKLQQw42eMUWDFBUEpApxCAzls73/R68VGjbBC8LCiauYHB1fASA+yRencqLBOEfpL0HXi5Vg==}
+  /hd-scripts@9.0.6:
+    resolution: {integrity: sha512-qoVWaRSWOg8Rxq4T2YHjwZBPnZB8Zm7EiyQS9HxJewiLETWgs/QgejkbtuD1oGG8gahlgwo65pyh3QGECvOXYQ==}
     engines: {node: '>=14'}
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.7.3(@typescript-eslint/parser@6.7.3)(eslint@8.50.0)(typescript@5.2.2)
