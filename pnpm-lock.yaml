@@ -46,8 +46,8 @@ importers:
         specifier: ^7.23.0
         version: 7.23.0
       '@types/node':
-        specifier: ^20.7.0
-        version: 20.7.0
+        specifier: ^20.8.7
+        version: 20.8.7
       hd-scripts:
         specifier: ^9.0.5
         version: 9.0.5
@@ -56,7 +56,7 @@ importers:
         version: 5.2.2
       vite:
         specifier: ^4.4.11
-        version: 4.4.11(@types/node@20.7.0)
+        version: 4.4.11(@types/node@20.8.7)
 
   packages/package1:
     devDependencies:
@@ -67,8 +67,8 @@ importers:
         specifier: ^10.0.2
         version: 10.0.2
       '@types/node':
-        specifier: ^20.7.0
-        version: 20.7.0
+        specifier: ^20.8.7
+        version: 20.8.7
       assert:
         specifier: ^2.1.0
         version: 2.1.0
@@ -920,8 +920,10 @@ packages:
     resolution: {integrity: sha512-NaHL0+0lLNhX6d9rs+NSt97WH/gIlRHmszXbQ/8/MV/eVcFNdeJ/GYhrFuUc8K7WuPhRhTSdMkCp8VMzhUq85w==}
     dev: true
 
-  /@types/node@20.7.0:
-    resolution: {integrity: sha512-zI22/pJW2wUZOVyguFaUL1HABdmSVxpXrzIqkjsHmyUjNhPoWM1CKfvVuXfetHhIok4RY573cqS0mZ1SJEnoTg==}
+  /@types/node@20.8.7:
+    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
+    dependencies:
+      undici-types: 5.25.3
     dev: true
 
   /@types/normalize-package-data@2.4.2:
@@ -4906,6 +4908,10 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /undici-types@5.25.3:
+    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
+    dev: true
+
   /unique-string@3.0.0:
     resolution: {integrity: sha512-VGXBUVwxKMBUznyffQweQABPRRW1vHZAbadFZud4pLFAqRGvv/96vafgjWFqzourzr8YonlQiPgH0YCJfawoGQ==}
     engines: {node: '>=12'}
@@ -4966,7 +4972,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.11(@types/node@20.7.0):
+  /vite@4.4.11(@types/node@20.8.7):
     resolution: {integrity: sha512-ksNZJlkcU9b0lBwAGZGGaZHCMqHsc8OpgtoYhsQ4/I2v5cnpmmmqe5pM4nv/4Hn6G/2GhTdj0DhZh2e+Er1q5A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4994,7 +5000,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.7.0
+      '@types/node': 20.8.7
       esbuild: 0.18.20
       postcss: 8.4.30
       rollup: 3.29.2
