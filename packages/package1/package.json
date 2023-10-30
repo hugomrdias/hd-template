@@ -5,6 +5,7 @@
   "description": "Example package description.",
   "author": "Hugo Dias <hugomrdias@gmail.com> (hugodias.me)",
   "license": "MIT",
+  "homepage": "https://github.com/hugomrdias/hd-template/tree/main/packages/package1",
   "repository": {
     "url": "hugomrdias/hd-template",
     "directory": "packages/package1"
