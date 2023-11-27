@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -61,8 +61,8 @@ importers:
   packages/package1:
     devDependencies:
       '@types/assert':
-        specifier: ^1.5.8
-        version: 1.5.8
+        specifier: ^1.5.10
+        version: 1.5.10
       '@types/mocha':
         specifier: ^10.0.3
         version: 10.0.3
@@ -829,8 +829,8 @@ packages:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
 
-  /@types/assert@1.5.8:
-    resolution: {integrity: sha512-tL1NSDf4CF5hiVTnLd4KSth6bmRO3+tw8cJzEAUaN6fYQ26DIixX0lRFmtrA0jhxUS8SL6PDWtphMz3maxapjA==}
+  /@types/assert@1.5.10:
+    resolution: {integrity: sha512-qEO+AUgYab7GVbeDDgUNCU3o0aZUoIMpNAe+w5LDbRxfxQX7vQAdDgwj1AroX+i8KaV56FWg0srXlSZROnsrIQ==}
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.5:
