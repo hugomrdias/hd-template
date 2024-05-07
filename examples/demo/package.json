@@ -10,7 +10,7 @@
   "main": "src/main.jsx",
   "scripts": {
     "lint": "tsc --build && eslint . && prettier --check '**/*.{js,jsx,ts,tsx,yml,json,css}' --ignore-path ../../.gitignore",
-    "build": "vite build --force",
+    "build": "vite build",
     "dev": "vite --force",
     "serve": "vite preview --port 3000"
   },
