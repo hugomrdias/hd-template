@@ -6,9 +6,9 @@
     "packages/*",
     "examples/*"
   ],
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@9.1.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,ts,jsx,tsx,yml,json,css}' --ignore-path .gitignore",
@@ -22,14 +22,14 @@
   },
   "devDependencies": {
     "depcheck": "^1.4.7",
-    "hd-scripts": "^9.0.6",
-    "lint-staged": "^15.0.2",
-    "prettier": "3.0.3",
-    "simple-git-hooks": "^2.9.0",
-    "typedoc": "^0.25.2",
-    "typedoc-plugin-missing-exports": "^2.1.0",
-    "typedoc-plugin-zod": "^1.1.0",
-    "typescript": "5.2.2"
+    "hd-scripts": "^9.1.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "simple-git-hooks": "^2.11.1",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-missing-exports": "^2.2.0",
+    "typedoc-plugin-zod": "^1.1.2",
+    "typescript": "5.4.5"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
