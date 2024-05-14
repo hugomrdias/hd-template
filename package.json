@@ -6,13 +6,11 @@
     "packages/*",
     "examples/*"
   ],
-  "packageManager": "pnpm@9.1.0",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "format": "prettier --write '**/*.{js,ts,jsx,tsx,yml,json,css}' --ignore-path .gitignore",
-    "format:check": "prettier --check '**/*.{js,ts,jsx,tsx,yml,json,css}' --ignore-path .gitignore",
+    "format": "biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true .",
     "clean": "rm -rf docs node_modules pnpm-lock.yaml packages/*/{pnpm-lock.yaml,coverage,.nyc_output,dist,node_modules} packages/*/{pnpm-lock.yaml,coverage,.nyc_output,dist,node_modules}",
     "lint": "pnpm -r --if-present run lint",
     "test": "pnpm -r --if-present run test",
@@ -21,8 +19,8 @@
     "docs": "typedoc --out docs --plugin typedoc-plugin-missing-exports --plugin typedoc-plugin-zod"
   },
   "devDependencies": {
+    "@hugomrdias/configs": "^0.1.5",
     "depcheck": "^1.4.7",
-    "hd-scripts": "^9.1.0",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "simple-git-hooks": "^2.11.1",
@@ -35,16 +33,9 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,yml,json,css}": "prettier --write",
-    "*": "eslint --fix"
+    "*": "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
   },
-  "prettier": "hd-scripts/prettier.config.js",
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/hd-scripts/eslint/index.js"
-    ],
-    "ignorePatterns": [
-      "docs"
-    ]
+  "dependencies": {
+    "@biomejs/biome": "^1.7.3"
   }
 }

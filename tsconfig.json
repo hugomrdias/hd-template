@@ -1,5 +1,5 @@
 {
-  "extends": "hd-scripts/tsconfig.json",
+  "extends": "@hugomrdias/configs/tsconfig",
   "typedocOptions": {
     "entryPointStrategy": "packages",
     "entryPoints": ["packages/package1"],

@@ -40,7 +40,7 @@
     "dist/src/*.d.ts.map"
   ],
   "scripts": {
-    "lint": "tsc --build && eslint . && prettier --check '**/*.{js,ts,yml,json}' --ignore-path ../../.gitignore",
+    "lint": "tsc --build && biome check --no-errors-on-unmatched --files-ignore-unknown=true .",
     "build": "tsc --build",
     "test": "pnpm run test:node && pnpm run test:browser",
     "test:node": "mocha 'test/**/!(*.browser).test.js'",
@@ -56,17 +56,6 @@
   },
   "publishConfig": {
     "provenance": true
-  },
-  "eslintConfig": {
-    "extends": [
-      "../../node_modules/hd-scripts/eslint/index.js"
-    ],
-    "env": {
-      "mocha": true
-    },
-    "ignorePatterns": [
-      "dist"
-    ]
   },
   "depcheck": {
     "specials": [

@@ -9,7 +9,7 @@
   "keywords": [],
   "main": "src/main.jsx",
   "scripts": {
-    "lint": "tsc --build && eslint . && prettier --check '**/*.{js,jsx,ts,tsx,yml,json,css}' --ignore-path ../../.gitignore",
+    "lint": "biome check --no-errors-on-unmatched --files-ignore-unknown=true .",
     "build": "vite build",
     "dev": "vite --force",
     "serve": "vite preview --port 3000"
@@ -19,17 +19,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
+    "@biomejs/biome": "^1.7.3",
+    "@hugomrdias/configs": "^0.1.5",
     "@types/node": "^20.12.10",
-    "hd-scripts": "^9.1.0",
     "typescript": "5.4.5",
     "vite": "^5.2.11"
-  },
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/hd-scripts/eslint/preact.js"
-    ],
-    "ignorePatterns": [
-      "dist"
-    ]
   }
 }
