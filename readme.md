@@ -8,7 +8,7 @@ Monorepo template for Javascript projects.
 
 - Github workflows, templates, Code of Conduct, Contributing guidelines, Security Policy, Dependabot config, Codeowners and license.
 - Dev container for Github Codespaces
-- JS setup with ESLint, prettier, depcheck, typescript, typedoc, mocha and playwright-test.
+- JS setup with biome, depcheck, typescript, typedoc, mocha and playwright-test.
 - Documentation generated with typedoc and published with Github pages.
 - Changelog, versioning and release management with [Release Please](https://github.com/googleapis/release-please).
 - Optional pre-commit hooks with lint-staged and simple-git-hooks.
