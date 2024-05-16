@@ -63,7 +63,6 @@
     ],
     "ignores": [
       "@types/*",
-      "hd-scripts",
       "assert"
     ]
   }

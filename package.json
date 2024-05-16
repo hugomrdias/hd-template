@@ -19,6 +19,7 @@
     "docs": "typedoc --out docs --plugin typedoc-plugin-missing-exports --plugin typedoc-plugin-zod"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
     "@hugomrdias/configs": "^0.1.5",
     "depcheck": "^1.4.7",
     "lint-staged": "^15.2.2",
@@ -34,8 +35,5 @@
   },
   "lint-staged": {
     "*": "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
-  },
-  "dependencies": {
-    "@biomejs/biome": "^1.7.3"
   }
 }
