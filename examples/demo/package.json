@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.5",
     "@biomejs/biome": "^1.7.3",
-    "@hugomrdias/configs": "^0.1.5",
+    "@hugomrdias/configs": "^0.1.7",
     "@types/node": "^20.12.10",
     "typescript": "5.4.5",
     "vite": "^5.2.11"

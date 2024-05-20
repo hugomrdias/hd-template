@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "@hugomrdias/configs": "^0.1.5",
+    "@hugomrdias/configs": "^0.1.7",
     "depcheck": "^1.4.7",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
