@@ -30,8 +30,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(typedoc@0.25.13(typescript@5.4.5))
       typedoc-plugin-zod:
-        specifier: ^1.1.2
-        version: 1.1.2(typedoc@0.25.13(typescript@5.4.5))
+        specifier: ^1.2.1
+        version: 1.2.1(typedoc@0.25.13(typescript@5.4.5))
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -1857,10 +1857,10 @@ packages:
     peerDependencies:
       typedoc: 0.24.x || 0.25.x
 
-  typedoc-plugin-zod@1.1.2:
-    resolution: {integrity: sha512-jsmuYg1xsGjwKdhKN4tgRYORnbKpU7v5B1ZpsazMH5lUsI6ZLxBqAY5iiZ06oz/01gHOsAdhpABgWD97MOjKQA==}
+  typedoc-plugin-zod@1.2.1:
+    resolution: {integrity: sha512-oPo0PhcryKNR9UYZ6F4LFqDpQEBtNRQe6CpRTOUGrdqZOeoIZtJBVVZnSn/pBJiBU+Y6iZ/HsPESLZn1BPeLkw==}
     peerDependencies:
-      typedoc: 0.23.x || 0.24.x || 0.25.x
+      typedoc: 0.23.x || 0.24.x || 0.25.x || 0.26.x
 
   typedoc@0.25.13:
     resolution: {integrity: sha512-pQqiwiJ+Z4pigfOnnysObszLiU3mVLWAExSPf+Mu06G/qsc3wzbuM56SZQvONhHLncLUhYzOVkjFFpFfL5AzhQ==}
@@ -3706,7 +3706,7 @@ snapshots:
     dependencies:
       typedoc: 0.25.13(typescript@5.4.5)
 
-  typedoc-plugin-zod@1.1.2(typedoc@0.25.13(typescript@5.4.5)):
+  typedoc-plugin-zod@1.2.1(typedoc@0.25.13(typescript@5.4.5)):
     dependencies:
       typedoc: 0.25.13(typescript@5.4.5)
 
