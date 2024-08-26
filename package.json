@@ -24,10 +24,10 @@
     "depcheck": "^1.4.7",
     "lint-staged": "^15.2.7",
     "simple-git-hooks": "^2.11.1",
-    "typedoc": "^0.25.13",
+    "typedoc": "^0.26.6",
     "typedoc-plugin-missing-exports": "^2.3.0",
     "typedoc-plugin-zod": "^1.2.1",
-    "typescript": "5.4.5"
+    "typescript": "5.5.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
