@@ -1,4 +1,4 @@
-import crypto from 'crypto'
+import crypto from 'node:crypto'
 
 export const webcrypto = /** @type {Crypto} */ (crypto.webcrypto)
 
@@ -10,7 +10,6 @@ export const webcrypto = /** @type {Crypto} */ (crypto.webcrypto)
 export function randomBytes(length = 32) {
   if (crypto.webcrypto) {
     return crypto.webcrypto.getRandomValues(new Uint8Array(length))
-  } else {
-    throw new Error("The environment doesn't have randomBytes function")
   }
+  throw new Error("The environment doesn't have randomBytes function")
 }

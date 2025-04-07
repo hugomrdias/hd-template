@@ -19,15 +19,15 @@
     "docs": "typedoc --out docs --plugin typedoc-plugin-missing-exports --plugin typedoc-plugin-zod"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@hugomrdias/configs": "^0.1.7",
+    "@biomejs/biome": "^1.9.4",
+    "@hugomrdias/configs": "^0.1.9",
     "depcheck": "^1.4.7",
-    "lint-staged": "^15.2.7",
-    "simple-git-hooks": "^2.11.1",
-    "typedoc": "^0.25.13",
-    "typedoc-plugin-missing-exports": "^2.3.0",
-    "typedoc-plugin-zod": "^1.2.1",
-    "typescript": "5.4.5"
+    "lint-staged": "^15.5.0",
+    "simple-git-hooks": "^2.12.1",
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-missing-exports": "^4.0.0",
+    "typedoc-plugin-zod": "^1.4.0",
+    "typescript": "5.8.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

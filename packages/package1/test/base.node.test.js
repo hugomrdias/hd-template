@@ -1,7 +1,7 @@
 import assert from 'assert'
 
-describe('test', function () {
-  it('test1', function () {
+describe('test', () => {
+  it('test1', () => {
     assert.ok(true)
   })
 })

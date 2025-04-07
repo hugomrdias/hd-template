@@ -45,11 +45,7 @@ Override the `tsconfig.json` in the package with the following:
 
 ## Examples
 
-- [`demo`](https://github.com/hugomrdias/hd-template/tree/master/examples/demo) - description
-
-### Checkout examples
-
-You can use [Codesandbox](https://githubbox.com/hugomrdias/hd-template/tree/master/examples/demo) and start hacking right away.
+- [`demo`](https://github.com/hugomrdias/hd-template/tree/master/examples/demo) - description [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/hugomrdias/hd-template/tree/master/examples/demo?title=HD%20Template%20Demo&file=src/main.jsx&hideExplorer=1&theme=dark)
 
 To clone it locally:
 
